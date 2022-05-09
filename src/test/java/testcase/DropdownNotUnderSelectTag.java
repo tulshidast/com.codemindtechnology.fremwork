@@ -24,9 +24,11 @@ public class DropdownNotUnderSelectTag {
 		List<WebElement> list = driver.findElements(By.xpath("//ul[@id='flagstrap-drop-down-list']//li//img"));
 
 		for (WebElement elm : list) {
-			if (elm.getAttribute("src").contains("QATAR"))
+			if (elm.getAttribute("src").contains("nepal"))
 				elm.click();
 		}
+
+		driver.findElement(By.id("domain-done")).click();
 	}
 
 }
