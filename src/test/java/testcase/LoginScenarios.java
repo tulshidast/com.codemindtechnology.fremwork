@@ -43,10 +43,7 @@ public class LoginScenarios {
 		softAssert.assertTrue(loginPage.getSubmitButton().isSelected());
 		loginPage.getSubmitButton().click();
 
-		// Assert.assertEquals(loginPage.getHomePageTitle(), "Login Successfully");
-
 		softAssert.assertEquals(loginPage.getHomePageTitle(), "Login Successfully");
-		// Assert.assertTrue(loginPage.getHomePageTitle().equals("Login Successfully"));
 		softAssert.assertAll();
 
 	}
@@ -64,7 +61,7 @@ public class LoginScenarios {
 		loginPage.getUserNameTextBox().sendKeys(userName);
 		loginPage.getPasswordTextBox().sendKeys(password);
 		loginPage.getSubmitButton().click();
-		
+
 		Assert.assertEquals(loginPage.getHomePageTitle(), "Login Successfully");
 	}
 
