@@ -15,7 +15,7 @@ public class DropdownNotUnderSelectTag {
 	@Test
 	public void main() throws InterruptedException {
 		// TODO Auto-generated method stub
-		System.setProperty("webdriver.chrome.driver", "C:/Users/Administrator/Desktop/Jars/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "./src/main/resources/chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get("https://www.airvistara.com/in/en");

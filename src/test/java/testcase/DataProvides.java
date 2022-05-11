@@ -10,7 +10,5 @@ public class DataProvides {
 		Object array[][] = { { "test1", "test1" }, { "test2", "test2" }, { "test3", "test3" } };
 		return array;
 
-		// return new Object[][] { { "test1", "test1" }, { "test2", "test2" }, {
-		// "test3", "test3" } };
 	}
 }

@@ -3,11 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testcase.LicLogin">
+      <class name="testcase.DataProviderSoftAssert">
         <methods>
-          <include name="licLogin"/>
+          <include name="launchApplication"/>
+          <include name="verifyValidLogin"/>
+          <include name="tearDown"/>
+          <include name="initializeBrowser"/>
         </methods>
-      </class> <!-- testcase.LicLogin -->
+      </class> <!-- testcase.DataProviderSoftAssert -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

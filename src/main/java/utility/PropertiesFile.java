@@ -9,8 +9,7 @@ public class PropertiesFile {
 	public static String getProperty(String key) {
 		String keyValue = null;
 		try {
-			File file = new File(
-					"C:\\Users\\Administrator\\classworkspace\\com.codemind.testing\\com.codemindtechnology.fremwork\\src\\test\\java\\resources\\test.properties");
+			File file = new File("src/main/resources/test.properties");
 			FileInputStream fiStream = new FileInputStream(file);
 
 			Properties properties = new Properties();

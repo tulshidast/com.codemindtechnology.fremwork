@@ -18,7 +18,7 @@ public class ParallelExecution {
 
 	@BeforeMethod
 	public void setUp() {
-		System.setProperty("webdriver.chrome.driver", "C:/Users/Administrator/Desktop/Jars/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "./src/main/resources/chromedriver.exe");
 		driver = new ChromeDriver();
 		loginPage = new LoginPage(driver);
 		driver.get(PropertiesFile.getProperty("url"));
